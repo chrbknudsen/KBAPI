@@ -7,7 +7,7 @@
 #' @return Beskrivelse af returværdien.
 #' @examples
 #' # Eksempel på brug af funktionen
-#' get_arial(param1 = 1, param2 = "tekst")
+#' get_arial(param1 = 1, param2 = 2)
 #' @export
 get_arial <- function(param1, param2){
   param1*param2
