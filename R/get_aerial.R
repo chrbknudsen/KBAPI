@@ -14,6 +14,17 @@
 
 get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = "kml"){
   # tjek input
+  if(!is.numeric(lat)){
+    rlang::abort("lat must be numeric", class = "invalid_input")
+  }
+  if(!is.numeric(lon)){
+    rlang::abort("lon must be numeric", class = "invalid_input")
+  }
+  if(!(format %in% c("kml", "rss", "atom", "mods"))){
+    rlang::abort("format must be one of 'kml', 'rss', 'atom' or 'mods'", class = "invalid_input")
+  }
+  # warnings når lat/lon er uden for range
+  # rlang::warn()
   api_url <- "http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/"
   formatted_lat <- sprintf("%.16f", lat)
   formatted_lon <- sprintf("%.16f", lon)
