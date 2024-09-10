@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# KBapi
+# KBapi <a href="https://kubdatalab.github.io/KBAPI/"><img src="man/figures/logo.png" align="right" height="139" alt="KBapi website" /></a>
 
 <!-- badges: start -->
 
