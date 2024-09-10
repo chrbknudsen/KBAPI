@@ -20,11 +20,11 @@ query_params <- list(
   q_person = "",
   q_adresse = "",
   notBefore = 1920,
-  notAfter = 1970,
+  notAfter = 1990,
   category = "subject203",
   itemType = "all",
   thumbnailSize = "",
-  format = "xml"
+  format = "kml"
 )
 
 # Send GET-anmodningen med parametre som query string
@@ -33,4 +33,4 @@ response <- request(api_url) %>%
   req_perform()
 
 response
-
+request(api_url) %>% req_perform()
