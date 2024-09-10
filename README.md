@@ -15,7 +15,18 @@ The goal of KBapi is to …
 You can install the development version of KBapi like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+options(repos = c(
+  kubdatalab = '',
+  CRAN = 'httpos://cloud.r-project.org')
+)
+
+install.packages('KBAPI')
+```
+
+Or directly from github:
+
+``` r
+devtools::install_github('KUBDatalab/KBAPI')
 ```
 
 ## Example
