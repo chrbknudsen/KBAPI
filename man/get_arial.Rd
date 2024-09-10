@@ -19,5 +19,5 @@ En kort beskrivelse af hvad funktionen gør.
 }
 \examples{
 # Eksempel på brug af funktionen
-get_arial(param1 = 1, param2 = "tekst")
+get_arial(param1 = 1, param2 = 2)
 }
