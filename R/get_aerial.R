@@ -2,9 +2,9 @@
 #'
 #' En kort beskrivelse af hvad funktionen gør.
 #'
-#' @param lat Beskrivelse af første parameter.
-#' @param lon Beskrivelse af anden parameter.
-#' @param format formatet output kommer i. vælg mellem kml, rss, atom og mods
+#' @param lat Latitude
+#' @param lon Longitude
+#' @param format Outputformat. Either kml, rss, atom or mods
 #' @return Beskrivelse af returværdien.
 #' @examples
 #' # Eksempel på brug af funktionen
@@ -45,7 +45,7 @@ get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = 
     itemType = "all",
     thumbnailSize = "",
     format = format,
-    itemsPerPage = 3
+    itemsPerPage = 10
   )
   response <- httr2::request(api_url) |>
     httr2::req_url_query(!!!query_params) |>
