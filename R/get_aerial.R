@@ -5,7 +5,7 @@
 #' @param lat Latitude
 #' @param lon Longitude
 #' @param format Outputformat. Either kml, rss, atom or mods
-#' @return Beskrivelse af returværdien.
+#' @return A tibble containing SVARET!
 #' @examples
 #' # Eksempel på brug af funktionen
 #' get_aerial(lat = 1, lon = 2)
@@ -23,7 +23,9 @@ get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = 
   if(!(format %in% c("kml", "rss", "atom", "mods"))){
     rlang::abort("format must be one of 'kml', 'rss', 'atom' or 'mods'", class = "invalid_input")
   }
-  # warnings når lat/lon er uden for range
+  # warnings når lat/lon er uden for range deter -90 til 90 for lat og -180 til 180 for long
+  # Og der er en mere snæver grænse på de luftfotos vi har.
+  # Det må også være muligt at angive en bounding box på en mere fix måde.
   # rlang::warn()
   api_url <- "http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/"
   formatted_lat <- sprintf("%.16f", lat)
