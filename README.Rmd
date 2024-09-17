@@ -30,7 +30,7 @@ PUB <- FALSE # Vi har ikke publiceret endnu
 
 <!-- badges: end -->
 
-The goal of KBapi is to ...
+The goal of KBapi is to make it easy to extract data from the API of Royal Danish Library.
 
 ## Installation
 

@@ -11,7 +11,8 @@ badge](https://kubdatalab.r-universe.dev/badges/KBapi)](https://kubdatalab.r-uni
 
 <!-- badges: end -->
 
-The goal of KBapi is to …
+The goal of KBapi is to make it easy to extract data from the API of
+Royal Danish Library.
 
 ## Installation
 
