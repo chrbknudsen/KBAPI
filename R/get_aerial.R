@@ -51,6 +51,16 @@ get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = 
     httr2::req_url_query(!!!query_params) |>
     httr2::req_perform()
 # Her bør der nok være noget tjek af om ting gik godt.
-  response
-}
+  response <- response %>%
+    resp_body_xml()
+  tibble(navn =response %>%
+           xml_child(1) %>%
+           xml_children() %>%
+           xml_name(),
+         indhold = response %>%
+           xml_child() %>%
+           xml_children() %>%
+           lapply(function(x) x))
+
+  }
 
