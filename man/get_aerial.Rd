@@ -4,12 +4,14 @@
 \alias{get_aerial}
 \title{Søg luftfotos}
 \usage{
-get_aerial(lat = 56.0075146363177, lon = 12.2288401900055)
+get_aerial(lat = 56.0075146363177, lon = 12.2288401900055, format = "kml")
 }
 \arguments{
-\item{lat}{Beskrivelse af første parameter.}
+\item{lat}{Latitude}
 
-\item{lon}{Beskrivelse af anden parameter.}
+\item{lon}{Longitude}
+
+\item{format}{Outputformat. Either kml, rss, atom or mods}
 }
 \value{
 Beskrivelse af returværdien.

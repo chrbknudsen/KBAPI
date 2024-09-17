@@ -2,9 +2,9 @@
 #'
 #' En kort beskrivelse af hvad funktionen gør.
 #'
-#' @param lat Beskrivelse af første parameter.
-#' @param lon Beskrivelse af anden parameter.
-#' @param format formatet output kommer i. vælg mellem kml, rss, atom og mods
+#' @param lat Latitude
+#' @param lon Longitude
+#' @param format Outputformat. Either kml, rss, atom or mods
 #' @return Beskrivelse af returværdien.
 #' @examples
 #' # Eksempel på brug af funktionen
@@ -14,6 +14,17 @@
 
 get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = "kml"){
   # tjek input
+  if(!is.numeric(lat)){
+    rlang::abort("lat must be numeric", class = "invalid_input")
+  }
+  if(!is.numeric(lon)){
+    rlang::abort("lon must be numeric", class = "invalid_input")
+  }
+  if(!(format %in% c("kml", "rss", "atom", "mods"))){
+    rlang::abort("format must be one of 'kml', 'rss', 'atom' or 'mods'", class = "invalid_input")
+  }
+  # warnings når lat/lon er uden for range
+  # rlang::warn()
   api_url <- "http://www.kb.dk/cop/syndication/images/luftfo/2011/maj/luftfoto/subject203/"
   formatted_lat <- sprintf("%.16f", lat)
   formatted_lon <- sprintf("%.16f", lon)
@@ -34,12 +45,22 @@ get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = 
     itemType = "all",
     thumbnailSize = "",
     format = format,
-    itemsPerPage = 3
+    itemsPerPage = 10
   )
   response <- httr2::request(api_url) |>
     httr2::req_url_query(!!!query_params) |>
     httr2::req_perform()
 # Her bør der nok være noget tjek af om ting gik godt.
-  response
-}
+  response <- response %>%
+    resp_body_xml()
+  tibble(navn =response %>%
+           xml_child(1) %>%
+           xml_children() %>%
+           xml_name(),
+         indhold = response %>%
+           xml_child() %>%
+           xml_children() %>%
+           lapply(function(x) x))
+
+  }
 
