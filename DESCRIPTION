@@ -15,4 +15,7 @@ Config/testthat/edition: 3
 URL: https://kubdatalab.github.io/KBAPI/
 Imports: 
     httr2,
-    rlang
+    magrittr,
+    rlang,
+    tibble,
+    xml2
