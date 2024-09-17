@@ -1,10 +1,10 @@
 Package: KBapi
-Title: What the Package Does (One Line, Title Case)
+Title: Wrapper for Royal Danish Library API
 Version: 0.0.0.9000
 Authors@R: 
     person("Christian", "Knudsen", , "cbk@kb.dk", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-9816-768X"))
-Description: What the package does (one paragraph).
+Description: Provides wrappers for Royal Danish Library APIs for Aerial photographs, digitized images and litterature.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
