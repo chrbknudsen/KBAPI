@@ -4,11 +4,11 @@
 \name{KBapi-package}
 \alias{KBapi}
 \alias{KBapi-package}
-\title{KBapi: What the Package Does (One Line, Title Case)}
+\title{KBapi: Wrapper for Royal Danish Library API}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-What the package does (one paragraph).
+Provides wrappers for Royal Danish Library APIs for Aerial photographs, digitized images and litterature.
 }
 \seealso{
 Useful links:
