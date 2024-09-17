@@ -6,6 +6,9 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/KUBDatalab/KBAPI/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/KUBDatalab/KBAPI/actions/workflows/R-CMD-check.yaml)
+[![r-universe status
+badge](https://kubdatalab.r-universe.dev/badges/KBAPI)](https://kubdatalab.r-universe.dev/KBAPI)
+[![](https://img.shields.io/badge/devel%20version-0.0.0.9000-blue.svg)](https://github.com/KUBDatalab/KBAPI)
 <!-- badges: end -->
 
 The goal of KBapi is to …
