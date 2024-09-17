@@ -36,6 +36,11 @@ link-citations: true
 knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), 'poster.html')) })
 
 ---
+logocenter_name - den qr-kode kan vi generere.
+
+library(qrcode)
+code <- qr_code("QR CODE")
+plot(code)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,
@@ -74,6 +79,8 @@ med brug af sandpaper [@sandpaper] pakken, og tilgængeliggjort på GitHub.
 Hvordan bygger vi så hurtigt et kursus?
 
 klon siden, rediger config.yaml, PR - og så er den der.
+
+
 
 
 # Methods
