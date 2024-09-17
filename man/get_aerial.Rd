@@ -14,7 +14,7 @@ get_aerial(lat = 56.0075146363177, lon = 12.2288401900055, format = "kml")
 \item{format}{Outputformat. Either kml, rss, atom or mods}
 }
 \value{
-Beskrivelse af returværdien.
+A tibble containing SVARET!
 }
 \description{
 En kort beskrivelse af hvad funktionen gør.
