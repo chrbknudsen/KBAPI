@@ -86,9 +86,7 @@ I will show here how to include poster elements that may be useful, such as an e
 $$
 E = mc^2
 $$
-```{r pressure, echo=FALSE, fig.cap="A caption", out.width = '100%'}
-knitr::include_graphics("kursussiden.png")
-```
+
 
 
 
@@ -142,7 +140,7 @@ knitr::kable(
 
 
 ```{r pingviner, echo=FALSE, fig.cap="palmer penguins hexsticker -Artwork by @allison_horst ", out.width = '20%'}
-knitr::include_graphics("../figure/palmerpenguins.png")
+knitr::include_graphics("../man/figures/logo.png")
 ```
 
 ## Hvor finder du den?
