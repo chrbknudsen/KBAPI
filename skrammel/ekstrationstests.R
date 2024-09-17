@@ -31,7 +31,8 @@ extraher <- function(xml_data){
 # vi ser lige at den virker.
 xml_data %>%
   filter(navn == "Placemark") %>%
-  mutate(ting = map(indhold, extraher))
+  transmute(placemark = map(indhold, extraher)) %>%
+  mutate(startIndex = )
 
 
 
@@ -46,17 +47,4 @@ itemsPerPage <- xml_data%>% filter(navn == "itemsPerPage") %>%
 totalResults <- xml_data%>% filter(navn == "totalResults") %>%
   pull(indhold) %>% .[[1]] %>%
   xml_text()
-
-
-link1 <- xml_data %>% filter(navn == "link") %>%
-  slice(1) %>%
-  pull(indhold) %>% .[[1]] %>% xml_attrs()  %>% as.list() %>% as_tibble()
-
-
-link2 <- xml_data %>% filter(navn == "link") %>%
-  slice(2) %>%
-  pull(indhold) %>% .[[1]] %>% xml_attrs()  %>% as.list() %>% as_tibble()
-
-
-
 
