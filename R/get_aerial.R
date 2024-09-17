@@ -52,14 +52,14 @@ get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = 
     httr2::req_perform()
 # Her bør der nok være noget tjek af om ting gik godt.
   response <- response %>%
-    resp_body_xml()
-  tibble(navn =response %>%
-           xml_child(1) %>%
-           xml_children() %>%
-           xml_name(),
+    httr2::resp_body_xml()
+  tibble::tibble(navn =response %>%
+           xml2::xml_child(1) %>%
+           xml2::xml_children() %>%
+           xml2::xml_name(),
          indhold = response %>%
-           xml_child() %>%
-           xml_children() %>%
+           xml2::xml_child() %>%
+           xml2::xml_children() %>%
            lapply(function(x) x))
 
   }
