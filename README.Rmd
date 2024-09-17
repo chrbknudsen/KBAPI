@@ -30,7 +30,7 @@ You can install the development version of KBapi like so:
 ``` r
 options(repos = c(
   kubdatalab = '',
-  CRAN = 'httpos://cloud.r-project.org')
+  CRAN = 'https://cloud.r-project.org')
 )
 
 install.packages('KBAPI')
