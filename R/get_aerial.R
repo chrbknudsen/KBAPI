@@ -12,7 +12,9 @@
 #' @export
 
 
-get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = "kml"){
+get_aerial <- function(lat=56.007514636317666,
+                       lon=12.228840190005485,
+                       format = "kml"){
   # tjek input
   if(!is.numeric(lat)){
     rlang::abort("lat must be numeric", class = "invalid_input")
@@ -21,9 +23,10 @@ get_aerial <- function(lat=56.007514636317666, lon=12.228840190005485, format = 
     rlang::abort("lon must be numeric", class = "invalid_input")
   }
   if(!(format %in% c("kml", "rss", "atom", "mods"))){
-    rlang::abort("format must be one of 'kml', 'rss', 'atom' or 'mods'", class = "invalid_input")
+    rlang::abort("format must be one of 'kml', 'rss', 'atom' or 'mods'",
+                 class = "invalid_input")
   }
-  # warnings når lat/lon er uden for range deter -90 til 90 for lat og -180 til 180 for long
+  # warnings når lat/lon er uden for range: -90-90 for lat og -180-180 for long
   # Og der er en mere snæver grænse på de luftfotos vi har.
   # Det må også være muligt at angive en bounding box på en mere fix måde.
   # rlang::warn()
