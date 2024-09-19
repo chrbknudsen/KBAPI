@@ -6,6 +6,7 @@ Authors@R:
            comment = c(ORCID = "0000-0002-9816-768X"))
 Description: Provides wrappers for Royal Danish Library APIs for Aerial photographs, digitized images and litterature.
 License: MIT + file LICENSE
+BugReports: https://github.com/KUBDatalab/KBapi/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
@@ -17,5 +18,6 @@ Imports:
     httr2,
     magrittr,
     rlang,
+    rvest,
     tibble,
     xml2

@@ -20,6 +20,8 @@ A tibble containing SVARET!
 En kort beskrivelse af hvad funktionen gør.
 }
 \examples{
+\dontrun{
 # Eksempel på brug af funktionen
 get_aerial(lat = 1, lon = 2)
+}
 }
