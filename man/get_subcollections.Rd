@@ -2,15 +2,15 @@
 % Please edit documentation in R/get_subcollection.R
 \name{get_subcollections}
 \alias{get_subcollections}
-\title{Søg subcollections}
+\title{Get sub collections}
 \usage{
 get_subcollections()
 }
 \value{
-A tibble containing SVARET!
+A character vector containing current list of sub collections
 }
 \description{
-returnerer subcollections fra text collections
+returns sub collections from text collections
 }
 \examples{
 # Eksempel på brug af funktionen

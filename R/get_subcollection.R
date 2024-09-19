@@ -1,8 +1,8 @@
-#' Søg subcollections
+#' Get sub collections
 #'
-#' returnerer subcollections fra text collections
+#' returns sub collections from text collections
 #'
-#' @return A tibble containing SVARET!
+#' @return A character vector containing current list of sub collections
 #' @examples
 #' # Eksempel på brug af funktionen
 #' get_subcollections()
