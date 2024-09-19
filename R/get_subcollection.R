@@ -5,7 +5,7 @@
 #' @return A tibble containing SVARET!
 #' @examples
 #' # Eksempel på brug af funktionen
-#' get_text(q = "helsinge")
+#' get_text()
 #' @export
 #'
 #'

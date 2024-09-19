@@ -4,7 +4,10 @@
 \alias{get_text}
 \title{Søg ADL}
 \usage{
-get_text()
+get_text(q)
+}
+\arguments{
+\item{q}{søgestreng}
 }
 \value{
 A tibble containing SVARET!

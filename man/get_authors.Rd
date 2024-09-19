@@ -4,7 +4,10 @@
 \alias{get_authors}
 \title{Søg forfattere fra textcollections}
 \usage{
-get_authors()
+get_authors(q)
+}
+\arguments{
+\item{q}{søgestreng}
 }
 \value{
 A tibble containing SVARET!

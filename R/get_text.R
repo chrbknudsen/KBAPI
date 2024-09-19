@@ -2,6 +2,7 @@
 #'
 #' søger i ADL
 #'
+#' @param q søgestreng
 #' @return A tibble containing SVARET!
 #' @examples
 #' # Eksempel på brug af funktionen
@@ -10,7 +11,7 @@
 #'
 #'
 
-get_text <- function(){
+get_text <- function(q){
 
 }
 

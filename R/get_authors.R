@@ -2,6 +2,7 @@
 #'
 #' Hjælpe funktion til at returnere forfattere fra text collections
 #'
+#' @param q søgestreng
 #' @return A tibble containing SVARET!
 #' @examples
 #' # Eksempel på brug af funktionen
@@ -10,6 +11,6 @@
 #'
 #'
 
-get_authors <- function(){
+get_authors <- function(q){
 
 }
