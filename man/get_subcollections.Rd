@@ -14,5 +14,5 @@ returnerer subcollections fra text collections
 }
 \examples{
 # Eksempel på brug af funktionen
-get_text()
+get_subcollections()
 }
