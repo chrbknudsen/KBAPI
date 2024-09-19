@@ -2,17 +2,17 @@
 % Please edit documentation in R/get_categories.R
 \name{get_categories}
 \alias{get_categories}
-\title{Categories i text collections}
+\title{Categories in text collections}
 \usage{
 get_categories()
 }
 \value{
-A tibble containing SVARET!
+A character vector containing current categories
 }
 \description{
 returnerer kategorier fra text collections
 }
 \examples{
 # Eksempel på brug af funktionen
-get_text(q = "helsinge")
+get_categories()
 }
