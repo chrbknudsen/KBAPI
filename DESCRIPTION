@@ -18,5 +18,6 @@ Imports:
     httr2,
     magrittr,
     rlang,
+    rvest,
     tibble,
     xml2
