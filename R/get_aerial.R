@@ -7,8 +7,10 @@
 #' @param format Outputformat. Either kml, rss, atom or mods
 #' @return A tibble containing SVARET!
 #' @examples
+#' \dontrun{
 #' # Eksempel på brug af funktionen
 #' get_aerial(lat = 1, lon = 2)
+#' }
 #' @export
 
 
