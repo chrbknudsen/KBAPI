@@ -2,6 +2,10 @@
 
 export("%>%")
 export(get_aerial)
+export(get_authors)
+export(get_categories)
+export(get_subcollections)
+export(get_text)
 importFrom(httr2,req_perform)
 importFrom(httr2,req_url_query)
 importFrom(httr2,request)

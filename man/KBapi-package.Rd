@@ -14,6 +14,7 @@ Provides wrappers for Royal Danish Library APIs for Aerial photographs, digitize
 Useful links:
 \itemize{
   \item \url{https://kubdatalab.github.io/KBAPI/}
+  \item Report bugs at \url{https://github.com/KUBDatalab/KBapi/issues}
 }
 
 }
