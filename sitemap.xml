@@ -6,6 +6,10 @@
 <url><loc>https://kubdatalab.github.io/KBAPI/index.html</loc></url>
 <url><loc>https://kubdatalab.github.io/KBAPI/reference/KBapi-package.html</loc></url>
 <url><loc>https://kubdatalab.github.io/KBAPI/reference/get_aerial.html</loc></url>
+<url><loc>https://kubdatalab.github.io/KBAPI/reference/get_authors.html</loc></url>
+<url><loc>https://kubdatalab.github.io/KBAPI/reference/get_categories.html</loc></url>
+<url><loc>https://kubdatalab.github.io/KBAPI/reference/get_subcollections.html</loc></url>
+<url><loc>https://kubdatalab.github.io/KBAPI/reference/get_text.html</loc></url>
 <url><loc>https://kubdatalab.github.io/KBAPI/reference/index.html</loc></url>
 <url><loc>https://kubdatalab.github.io/KBAPI/reference/pipe.html</loc></url>
 </urlset>
